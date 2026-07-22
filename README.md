@@ -1,0 +1,2 @@
+# pdf_rotate_app_vs2017
+vs2017環境でPDFを回転させるアプリ
