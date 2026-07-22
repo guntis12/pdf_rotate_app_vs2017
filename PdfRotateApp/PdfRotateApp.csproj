@@ -49,6 +49,14 @@
     <PackageReference Include="PDFsharp-gdi">
       <Version>1.50.5147</Version>
     </PackageReference>
+    <PackageReference Include="Fody">
+      <Version>4.2.1</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Costura.Fody">
+      <Version>3.3.3</Version>
+      <PrivateAssets>All</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
@@ -59,6 +67,7 @@
 
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="FodyWeavers.xml" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
