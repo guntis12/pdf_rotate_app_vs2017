@@ -57,7 +57,7 @@ namespace PdfRotateApp
                 Location = new Point(378, 212),
                 Size = new Size(150, 26)
             };
-            angleComboBox.Items.AddRange(new object[] { "右へ90°", "180°", "左へ90°" });
+            angleComboBox.Items.AddRange(new object[] {"左へ90°", "右へ90°", "180°"});
             angleComboBox.SelectedIndex = 0;
 
             rotateButton = CreateButton("回転して保存", 546, 207, 146);
@@ -206,9 +206,9 @@ namespace PdfRotateApp
 
         private int GetRotationDelta()
         {
-            if (angleComboBox.SelectedIndex == 1) return 180;
-            if (angleComboBox.SelectedIndex == 2) return -90;
-            return 90;
+            if (angleComboBox.SelectedIndex == 1) return 90;
+            if (angleComboBox.SelectedIndex == 2) return 180;
+            return -90;
         }
 
         private static int NormalizeRotation(int angle)
